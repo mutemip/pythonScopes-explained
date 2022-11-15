@@ -21,14 +21,15 @@ print(get_total(5, 2))
 
 
 
-2.  Enclosing scope
+## 2.  Enclosing scope
 
-- Enclosing scope refers to a function inside another function or what is commonly called a nested function. 
+- Enclosing scope refers to a function inside another function or what is commonly called a _nested function_. 
 
-In the code below, I added a nested function called double_it to the get_total function. 
+In the code below, I added a nested function called ``double_it`` to the ``get_total`` function. 
 
-As double_it is inside the scope for the get_total function it can then access the variable. However, the enclosed variable inside the double_it function cannot be accessed from inside the get_total function.
+As ``double_it`` is **inside** the scope for the ``get_total`` function it can then access the variable. However, the enclosed variable **inside** the ``double_it`` function cannot be accessed from inside the ``get_total`` function.
 
+```
 def get_total(a, b):
     #enclosed variable declared inside a function
     total = a + b
@@ -41,16 +42,19 @@ def get_total(a, b):
     return total
 print(get_total(10,4))
 
+```
 
 
 
 
-3. Global scope
 
-- Global scope is when a variable is declared outside of a function. This means it can be accessed from anywhere. 
+## 3. Global scope
 
-In the code below, I  added a global variable called special. This can then be accessed from both functions get_total and double_it:
+- Global scope is when a variable is declared outside of a function. This means it can be accessed from **anywhere**. 
 
+In the code below, I  added a **global** variable called **special**. This can then be accessed from both functions ``get_total`` and ``double_it``:
+
+```
 special = 5
 
 def get_total(a, b):
@@ -69,5 +73,7 @@ def get_total(a, b):
 
 get_total(5,3)
 
-4. Built-in scope
-Built-in scope refers to the reserved keywords that Python uses for its built-in functions, such as print, def, for, in, and so forth.  Functions with built-in scope can be accessed at any level.
+```
+
+## 4. Built-in scope
+Built-in scope refers to the ``reserved keywords`` that Python uses for its built-in functions, such as ``print``, ``def``, ``for``, ``in``, and so forth.  Functions with built-in scope can be accessed at any level.
