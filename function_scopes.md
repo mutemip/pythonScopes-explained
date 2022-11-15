@@ -7,7 +7,8 @@ It is essential to understand the levels of scope in Python and how things can b
 
 - Local scope refers to a variable declared **inside** a function. For example, in the code below, the variable **_total_** is only available to the code within the ``get_total`` function. Anything outside of this function will not have access to it.
 
-```def get_total(a, b):
+```
+def get_total(a, b):
     #local variable declared inside a function
     total = a + b;
     return total
